@@ -1,14 +1,18 @@
+print("Welcome to your BMI Calculator. Please enjoy.")
 # 1st input: enter height in meters e.g: 1.65
-height = 2
+height = float(input("Please enter your height in meters.\n"))
 # 2nd input: enter weight in kilograms e.g: 72
-weight = 5
-# 🚨 Don't change the code above 👆
+weight = int(input("Please enter your weight in kilograms.\n"))
 
-# Write your code below this line 👇
+bmi = weight / (height * height)
 
-weight_as_int = int(weight)
-height_as_float = float(height)
-
-bmi = weight_as_int / height_as_float ** 2
-bmi_as_int = int(bmi)
-print(bmi_as_int)
+if bmi < 18.5:
+    print(f"You BMI is {bmi:.1f}, you are underweight.")
+elif bmi < 25:
+    print(f"Your BMI is {bmi:.1f}, you have a normal weight.")
+elif bmi < 30:
+    print(f"Your BMI is {bmi:.1f}, you are slightly overweight.")
+elif bmi >= 30:
+    print(f"Your BMI is {bmi:.1f}, you are obese.")
+elif bmi > 35:
+    print(f"Your BMI is {bmi:.1f}, you are clinically obese.")
