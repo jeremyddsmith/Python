@@ -9,4 +9,4 @@ percentage = int(input("What percent tip would you like to leave? 10 15 20 or cu
 totalbill = float((percentage / 100 * bill) + bill)
 print(f"Your total bill is {totalbill: .2f}")
 individual = (totalbill / guests)
-print(f"Your total individual contribution is {individual: .2f}")
+print(f"Your total individual contribution is: ${individual: .2f}")
