@@ -4,8 +4,10 @@ height = float(input("Please enter your height in meters.\n"))
 # 2nd input: enter weight in kilograms e.g: 72
 weight = int(input("Please enter your weight in kilograms.\n"))
 
+# This will provide your bmi amount
 bmi = weight / (height * height)
 
+#This set of "if" statements will give your answer to the question.
 if bmi < 18.5:
     print(f"You BMI is {bmi:.1f}, you are underweight.")
 elif bmi < 25:
