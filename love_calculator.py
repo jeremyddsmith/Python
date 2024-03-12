@@ -8,16 +8,18 @@ name2b = name2.lower()
 
 #count the number of times each letter in love and true occur in the two names.
 truelove = (f"{name1b } + {name2b}")
-tcount = int(truelove.count("t"))
-rcount = int(truelove.count("r"))
-ucount = int(truelove.count("u"))
-ecount = int(truelove.count("e"))
-lcount = int(truelove.count("l"))
-ocount = int(truelove.count("o"))
-vcount = int(truelove.count("v"))
-ecount2 = int(truelove.count("e"))
+t = int(truelove.count("t"))
+r = int(truelove.count("r"))
+u = int(truelove.count("u"))
+e = int(truelove.count("e"))
+first_digit = t + r + u + e
 
-total = tcount + rcount + ucount + ucount + ecount + lcount + ocount + vcount + ecount2
+l = int(truelove.count("l"))
+o = int(truelove.count("o"))
+v = int(truelove.count("v"))
+e = int(truelove.count("e"))
+second_digit = l + o + v + e
+total = int(str(first_digit) + str(second_digit))
 
 if total < 10 or total > 90:
     print("You go together like coke and mentos!")
